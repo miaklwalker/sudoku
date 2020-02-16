@@ -10,18 +10,27 @@ export function cellHash (cell:string|number){
     }
 }
 
-export function cellMap (array: any[]) {
-    let iterator = 0;
-  return
-}
 
 export default function parseString (puzzleHash:string) {
-    if(puzzleHash.length !== 81)throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "';
-    let result = Array(9).fill(Array(9).fill(' '));
+    if (puzzleHash.length !== 81) throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "';
+    let result = [
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+    ] as (number|string)[][];
+    let hashed = [...puzzleHash].map(cellHash);
     let iterator = 0;
-    [...puzzleHash].map(cellHash).forEach((cell: number | string, index: number) => {
-        result[iterator][index % 9] = cell;
-        index % 9 === 0 && index > 9 && iterator++;
-    });
+    for (let i = 0; i < 9; i++) {
+        for (let j = 1; j < 10; j++) {
+            result[i][j-1] = hashed[((j -1 + iterator))];
+        }
+        iterator+=9
+    }
     return result;
 }

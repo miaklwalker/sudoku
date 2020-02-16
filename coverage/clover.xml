@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581870480874" clover="3.2.0">
-  <project timestamp="1581870480874" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="4" coveredmethods="4" elements="26" coveredelements="26" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="parseString.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/parseString.ts">
-      <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="4" coveredmethods="4"/>
-      <line num="4" count="85" type="cond" truecount="2" falsecount="0"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="84" type="cond" truecount="2" falsecount="0"/>
-      <line num="7" count="82" type="stmt"/>
+<coverage generated="1581895979886" clover="3.2.0">
+  <project timestamp="1581895979886" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="30" coveredelements="30" complexity="0" loc="19" ncloc="19" packages="1" files="2" classes="2"/>
+    <file name="findNextEmpty.ts" path="C:\Users\ouisi\WebstormProjects\sudoku\src\findNextEmpty.ts">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="26" type="stmt"/>
+      <line num="5" count="26" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="4" type="stmt"/>
+    </file>
+    <file name="parseString.ts" path="C:\Users\ouisi\WebstormProjects\sudoku\src\parseString.ts">
+      <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="4" count="328" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="226" type="stmt"/>
+      <line num="6" count="102" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="100" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="81" type="stmt"/>
-      <line num="17" count="81" type="cond" truecount="3" falsecount="0"/>
-      <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
+      <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="27" count="4" type="stmt"/>
+      <line num="28" count="4" type="stmt"/>
+      <line num="29" count="4" type="stmt"/>
+      <line num="30" count="36" type="stmt"/>
+      <line num="31" count="324" type="stmt"/>
+      <line num="33" count="36" type="stmt"/>
+      <line num="35" count="4" type="stmt"/>
     </file>
   </project>
 </coverage>
