@@ -12,15 +12,16 @@ export function cellHash (cell:string|number){
 
 export function cellMap (array: any[]) {
     let iterator = 0;
-  return (cell: number | string, index: number) => {
-        array[iterator][index % 9] = cell;
-        index % 9 === 0 && index > 9 && iterator++;
-    }
+  return
 }
 
 export default function parseString (puzzleHash:string) {
     if(puzzleHash.length !== 81)throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "';
     let result = Array(9).fill(Array(9).fill(' '));
-    [...puzzleHash].map(cellHash).forEach(cellMap(result));
+    let iterator = 0;
+    [...puzzleHash].map(cellHash).forEach((cell: number | string, index: number) => {
+        result[iterator][index % 9] = cell;
+        index % 9 === 0 && index > 9 && iterator++;
+    });
     return result;
 }

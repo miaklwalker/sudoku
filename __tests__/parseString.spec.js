@@ -18,9 +18,18 @@ describe('It Should be a pure function that takes a string of 81 characters and 
         }).toThrowError(error);
     });
     it('When passed a string of 81 numbers & "e" it returns a nested array',()=>{
-        let testString = '';
-        testString = testString.padEnd(81,'1');
-        let result = Array(9).fill(Array(9).fill(1));
+        let testString = '53ee7eeee6ee195eeee98eeee6e8eee6eee34ee8e3ee17eee2eee6e6eeee28eeee419ee5eeee8ee79';
+        let result = [
+            [ 5 , 3 ,' ',' ', 7 ,' ',' ',' ',' '],
+            [ 6 ,' ',' ', 1 , 9 ,  5,' ',' ',' '],
+            [' ', 9 , 8 ,' ',' ',' ',' ', 6 ,' '],
+            [ 8 ,' ',' ',' ', 6 ,' ',' ',' ', 3 ],
+            [ 4 ,' ',' ', 8 ,' ', 3 ,' ',' ', 1 ],
+            [ 7 ,' ',' ',' ', 2 ,' ',' ',' ', 6 ],
+            [' ', 6 ,' ',' ',' ',' ', 2 , 8 ,' '],
+            [' ',' ',' ', 4 , 1 , 9 ,' ',' ', 5 ],
+            [' ',' ',' ',' ', 8 ,' ',' ', 7 , 9 ],
+        ];
         expect(parseString(testString)).toEqual(expect.arrayContaining(result));
     });
     describe('Helper Function',()=>{
@@ -38,8 +47,6 @@ describe('It Should be a pure function that takes a string of 81 characters and 
                 it('should error when passed string other than "e"',()=>{
                     expect(()=>{cellHash('f')}).toThrowError(error);
                 });
-
-
             })
         })
     });

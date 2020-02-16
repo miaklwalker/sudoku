@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581845504614" clover="3.2.0">
-  <project timestamp="1581845504614" name="All files">
+<coverage generated="1581870480874" clover="3.2.0">
+  <project timestamp="1581870480874" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="4" coveredmethods="4" elements="26" coveredelements="26" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="parseString.ts" path="C:\Users\ouisi\WebstormProjects\sudoku\src\parseString.ts">
+    <file name="parseString.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/parseString.ts">
       <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="4" coveredmethods="4"/>
       <line num="4" count="85" type="cond" truecount="2" falsecount="0"/>
       <line num="5" count="1" type="stmt"/>
