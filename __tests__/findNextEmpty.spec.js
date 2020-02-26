@@ -2,7 +2,8 @@ import parseString from "../src/parseString";
 import findNextEmpty from "../src/findNextEmpty";
 
 describe('Finds the next empty cell',()=>{
-   it('Should accept a nested array and return the [x,y] of the next cell containing " " ',()=>{
+   it(`Should accept a nested array from parse string 
+              and return the [x,y] of the next cell containing " "`,()=>{
        let firstTest = parseString('123456789'.padEnd(81,'e'));
        expect(findNextEmpty(firstTest)[0]).toEqual(1);
        expect(findNextEmpty(firstTest)[1]).toEqual(0);

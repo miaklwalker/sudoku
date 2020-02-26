@@ -1,31 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581895979886" clover="3.2.0">
-  <project timestamp="1581895979886" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="30" coveredelements="30" complexity="0" loc="19" ncloc="19" packages="1" files="2" classes="2"/>
-    <file name="findNextEmpty.ts" path="C:\Users\ouisi\WebstormProjects\sudoku\src\findNextEmpty.ts">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="2" count="4" type="stmt"/>
-      <line num="3" count="6" type="stmt"/>
-      <line num="4" count="26" type="stmt"/>
-      <line num="5" count="26" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="4" type="stmt"/>
+<coverage generated="1582733130995" clover="3.2.0">
+  <project timestamp="1582733130996" name="All files">
+    <metrics statements="63" coveredstatements="63" conditionals="34" coveredconditionals="34" methods="18" coveredmethods="18" elements="115" coveredelements="115" complexity="0" loc="63" ncloc="63" packages="1" files="8" classes="8"/>
+    <file name="filterPossible.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/filterPossible.ts">
+      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <line num="5" count="535" type="stmt"/>
+      <line num="6" count="535" type="stmt"/>
+      <line num="7" count="535" type="stmt"/>
+      <line num="8" count="535" type="stmt"/>
+      <line num="10" count="535" type="stmt"/>
+      <line num="11" count="4815" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="17501" type="stmt"/>
+      <line num="16" count="535" type="stmt"/>
+      <line num="17" count="4815" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="4225" type="stmt"/>
+      <line num="22" count="535" type="stmt"/>
+      <line num="23" count="1605" type="stmt"/>
+      <line num="24" count="4815" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="468" type="stmt"/>
+      <line num="29" count="535" type="stmt"/>
     </file>
-    <file name="parseString.ts" path="C:\Users\ouisi\WebstormProjects\sudoku\src\parseString.ts">
+    <file name="findNextEmpty.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/findNextEmpty.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="575" type="stmt"/>
+      <line num="3" count="3157" type="stmt"/>
+      <line num="4" count="25700" type="stmt"/>
+      <line num="5" count="25700" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="554" type="stmt"/>
+      <line num="10" count="21" type="stmt"/>
+    </file>
+    <file name="nestedClone.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/nestedClone.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="2" count="251" type="stmt"/>
+    </file>
+    <file name="normalize.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/normalize.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="4" count="1079" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1079" type="stmt"/>
+      <line num="8" count="1079" type="stmt"/>
+    </file>
+    <file name="parseString.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/parseString.ts">
       <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <line num="4" count="328" type="cond" truecount="2" falsecount="0"/>
-      <line num="5" count="226" type="stmt"/>
-      <line num="6" count="102" type="cond" truecount="2" falsecount="0"/>
-      <line num="7" count="100" type="stmt"/>
+      <line num="4" count="652" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="359" type="stmt"/>
+      <line num="6" count="293" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="291" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
-      <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="27" count="4" type="stmt"/>
-      <line num="28" count="4" type="stmt"/>
-      <line num="29" count="4" type="stmt"/>
-      <line num="30" count="36" type="stmt"/>
-      <line num="31" count="324" type="stmt"/>
-      <line num="33" count="36" type="stmt"/>
-      <line num="35" count="4" type="stmt"/>
+      <line num="15" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="27" count="8" type="stmt"/>
+      <line num="28" count="8" type="stmt"/>
+      <line num="29" count="8" type="stmt"/>
+      <line num="30" count="72" type="stmt"/>
+      <line num="31" count="648" type="stmt"/>
+      <line num="33" count="72" type="stmt"/>
+      <line num="35" count="8" type="stmt"/>
+    </file>
+    <file name="puzzles.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/puzzles.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="8" count="2" type="stmt"/>
+    </file>
+    <file name="solveCell.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/solveCell.ts">
+      <metrics statements="11" coveredstatements="11" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+      <line num="7" count="2673" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="552" type="stmt"/>
+      <line num="12" count="552" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="534" type="stmt"/>
+      <line num="14" count="534" type="stmt"/>
+      <line num="15" count="534" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="534" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="21" count="15" type="stmt"/>
+      <line num="23" count="534" type="stmt"/>
+    </file>
+    <file name="solvePuzzle.ts" path="/Users/michaelwalker/WebstormProjects/sudoku/src/solvePuzzle.ts">
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="552" type="stmt"/>
+      <line num="16" count="552" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="549" type="stmt"/>
+      <line num="18" count="549" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
