@@ -1,11 +1,12 @@
-interface Puzzle {
-  [index:string]:string;
-  puzzle:string;
-  solution:string;
+interface Puzzles {
+  [index:string]: {
+      puzzle: string;
+      solution: string;
+  }
 }
 
 
- const puzzles = {
+ const puzzles:Puzzles = {
   one: {
     puzzle:"54ee2e8e6e19ee7ee3eee3ee21e9ee4e5e2eee1eee6e46e4e32e8ee6eeee19e4e2ee9ee5e9ee7e4e2",
     solution: "543921876219687543876354219987465321321798654654132987765243198432819765198576432"

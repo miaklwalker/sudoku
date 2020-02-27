@@ -11,7 +11,7 @@ describe('should filter out and return all possibilities for cell',()=>{
         empty = findNextEmpty(testPuzzle);
     });
 
-    it('should return back the results as an array of possibilities',()=>{
+    it('should return the results as an array of possibilities',()=>{
         let expectedResult = [3,7];
         expect(filterPossible(testPuzzle,empty)).toMatchObject(expectedResult);
     })

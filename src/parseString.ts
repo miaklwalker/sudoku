@@ -1,5 +1,3 @@
-
-
 export function cellHash (cell:string|number){
     if(cell === "e"){
         return ' '
@@ -13,17 +11,7 @@ export function cellHash (cell:string|number){
 
 export default function parseString (puzzleHash:string) {
     if (puzzleHash.length !== 81) throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "';
-    let result = [
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-        [' ',' ',' ',' ',' ',' ',' ',' ',' '],
-    ] as (number|string)[][];
+    let result = Array.from({length:9},()=>Array(9).fill(' ')) as (number|string)[][];
     let hashed = [...puzzleHash].map(cellHash);
     let iterator = 0;
     for (let i = 0; i < 9; i++) {

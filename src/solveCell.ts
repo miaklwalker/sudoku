@@ -1,7 +1,5 @@
-// @ts-ignore
-import findNextEmpty from "./findNextEmpty.ts";
-// @ts-ignore
-import {filterPossible} from "./filterPossible.ts";
+import findNextEmpty from "./findNextEmpty";
+import {filterPossible} from "./filterPossible";
 
 
 const stripSkip = (puzzle:any)=> puzzle.map((row:any[])=>row.map((cell:any) => cell==='s' ? ' ' : cell));
@@ -9,16 +7,16 @@ const stripSkip = (puzzle:any)=> puzzle.map((row:any[])=>row.map((cell:any) => c
 
 export default function solveCell(puzzle:any){
     let empty = findNextEmpty(puzzle);
-    if(empty!==undefined){
+    if(empty){
         const [x,y] = empty;
-        let possible = filterPossible(puzzle,empty);
-        if(possible.length > 1){puzzle[x][y]='s'}
-        if(possible.length===1){puzzle[x][y]=possible[0]}
+        let {0:value,length} = filterPossible(puzzle,empty);
+        length > 1 ? puzzle[x][y]='s':puzzle[x][y]=value;
     }else{
-        if(findNextEmpty(stripSkip(puzzle))===undefined){
+        let stripped = stripSkip(puzzle);
+        if(!findNextEmpty(stripped)){
             return undefined;
         }
-        return stripSkip(puzzle)
+        return stripped;
     }
     return puzzle;
 }
