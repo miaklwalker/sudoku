@@ -1,5 +1,5 @@
 import findNextEmpty from "./findNextEmpty";
-import {filterPossible} from "./filterPossible";
+import filterPossible from "./filterPossible";
 
 
 const stripSkip = (puzzle:any)=> puzzle.map((row:any[])=>row.map((cell:any) => cell==='s' ? ' ' : cell));

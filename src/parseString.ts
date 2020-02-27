@@ -1,16 +1,16 @@
 export function cellHash (cell:string|number){
-    if(cell === "e"){
+    if(cell === "e" || cell === '0'){
         return ' '
     }else if (cell >= 1){
         return Number(cell)
     }else{
-        throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "'
+        throw 'Please only pass a string of length 81 and containing "0 - 9 " & " e "'
     }
 }
 
 
 export default function parseString (puzzleHash:string) {
-    if (puzzleHash.length !== 81) throw 'Please only pass a string of length 81 and containing "1 - 9 " & " e "';
+    if (puzzleHash.length !== 81) throw 'Please only pass a string of length 81 and containing "0 - 9 " & " e ": failed in parseString';
     let result = Array.from({length:9},()=>Array(9).fill(' ')) as (number|string)[][];
     let hashed = [...puzzleHash].map(cellHash);
     let iterator = 0;

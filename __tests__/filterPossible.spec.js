@@ -1,4 +1,4 @@
-import {filterPossible} from "../src/filterPossible";
+import filterPossible from "../src/filterPossible";
 import parseString from "../src/parseString";
 import puzzles from "../src/puzzles";
 import findNextEmpty from "../src/findNextEmpty";
