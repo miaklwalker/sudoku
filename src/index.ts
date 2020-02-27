@@ -1,4 +1,4 @@
 import solvePuzzle from "./solvePuzzle";
-import puzzles from "./puzzles";
+import {puzzleList} from "./puzzles";
 
-puzzles.forEach(puzzle=>solvePuzzle(puzzle));
+puzzleList.forEach(puzzle=>solvePuzzle(puzzle));
